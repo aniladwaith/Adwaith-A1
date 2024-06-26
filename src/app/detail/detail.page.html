@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-ontario-status></app-ontario-status>
+  <div *ngIf="detailData">
+    <h2>Detail Data</h2>
+    <pre>{{ detailData | json }}</pre>
+  </div>
+  <div>
+    <h2>Message</h2>
+    <p>{{ message }}</p>
+    <ion-button (click)="sendMessage()">Send Message</ion-button>
+  </div>
+  <ion-button routerLink="/tabs/tab2">Back to Ontario Tab</ion-button>
+</ion-content>

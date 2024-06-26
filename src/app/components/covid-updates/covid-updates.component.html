@@ -1,0 +1,24 @@
+
+<ion-card *ngIf="fdata">
+  <ion-card-header>
+    <ion-card-title>{{ fdata.prname }}</ion-card-title>
+    <ion-card-subtitle>Date: {{ fdata.date }}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <p><b>Total Cases:</b> {{ fdata.totalcases }}</p>
+    <p><b>Total Deaths:</b> {{ fdata.numdeaths }}</p>
+    <p><b>Rate of Deaths:</b> {{ fdata.ratedeaths }}</p>
+    <p><b>Rate of Cases (Total):</b> {{ fdata.ratecases_total }}</p>
+    <p><b>Total Cases (Last 7 Days):</b> {{ fdata.numtotal_last7 }}</p>
+    <p><b>Total Deaths (Last 7 Days):</b> {{ fdata.numdeaths_last7 }}</p>
+    <p><b>Rate of Cases (Last 7 Days):</b> {{ fdata.ratecases_last7 }}</p>
+    <p><b>Rate of Deaths (Last 7 Days):</b> {{ fdata.ratedeaths_last7 }}</p>
+    <p><b>Average Cases (Last 7 Days):</b> {{ fdata.avgcases_last7 }}</p>
+    <p><b>Average Deaths (Last 7 Days):</b> {{ fdata.avgdeaths_last7 }}</p>
+    <p><b>Average Rate of Deaths (Last 7 Days):</b> {{ fdata.avgratedeaths_last7 }}</p>
+    <p><b>Total Cases (Last 14 Days):</b> {{ fdata.numtotal_last14 }}</p>
+    <p><b>Total Deaths (Last 14 Days):</b> {{ fdata.numdeaths_last14 }}</p>
+    <p><b>Rate of Cases (Last 14 Days):</b> {{ fdata.ratetotal_last14 }}</p>
+    <p><b>Rate of Deaths (Last 14 Days):</b> {{ fdata.ratedeaths_last14 }}</p>
+  </ion-card-content>
+</ion-card>

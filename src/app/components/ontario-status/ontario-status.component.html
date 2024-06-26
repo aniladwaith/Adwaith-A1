@@ -1,0 +1,12 @@
+<ion-content [fullscreen]="true">
+  <div *ngIf="fdata">
+    <h2>Ontario COVID-19 Status</h2>
+    <h2>Selected Record</h2>
+    <b>ID:</b> {{ fdata._id }} <br>
+    <b>Date:</b> {{ fdata.date }} <br>
+    <b>Hospitalized for COVID:</b> {{ fdata.hosp_for_covid }} <br>
+    <b>Hospitalized for Other Conditions:</b> {{ fdata.hosp_other_conditions }} <br>
+    <b>ICU for COVID:</b> {{ fdata.icu_for_covid }} <br>
+    <b>ICU for Other Conditions:</b> {{ fdata.icu_other_conditions }} <br>
+  </div>
+</ion-content>
